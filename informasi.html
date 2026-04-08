@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi</title>
+  <link rel="stylesheet" href="informasi.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="profil.html">Profil</a>
+    <a href="index.html">Home</a>
+    <a href="informasi.html"class="active">Informasi</a>
+    <a href="kontak.html">Alamat</a>
+    <a href="visi misi.html">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- HEADER PAGE -->
+<section class="page-header">
+  <div class="overlay"></div>
+  <h1>Informasi</h1>
+</section>
+
+<!-- PROGRAM -->
+<section class="program">
+  <div class="program-card"onclick="pindah1()">
+    <h3>Hari Guru </h3>
+    <img src="img.jpg/hari guru.jpeg" alt="Kegiatan Technology">
+  </div>
+
+  <div class="program-card" onclick="pindah2()">
+    <h3>Sumpah Pemuda</h3>
+    <img src="img.jpg/sumpah pemuda.jpeg" alt="Kegiatan Tahfidz">
+  </div>
+
+  <div class="program-card" onclick="pindah3()">
+    <h3>17 Agustus</h3>
+    <img src="img.jpg/17 agustus.jpeg" alt="Kegiatan">
+  </div>
+
+  <div class="program-card" onclick="pindah4()">
+  <h3>Hari Batik Nasional</h3>
+  <img src="img.jpg/batik nasional.jpeg" alt="kegiatan">
+</div>
+
+</section>
+
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+
+<script>
+function pindah1() {
+  window.location.href = "halaman/hari-guru.html";
+}
+function pindah2() {
+  window.location.href = "halaman/sumpah-pemuda.html";
+}
+function pindah3() {
+  window.location.href = "halaman/17-agustus.html";
+}
+function pindah4() {
+  window.location.href = "halaman/batik-nasional.html";
+}
+</script>
+
+
+</body>
+</html>

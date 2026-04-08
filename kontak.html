@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Sekolah</title>
+  <link rel="stylesheet" href="alamat.css">
+</head>
+<body>
+
+<!-- ICON SOSIAL MINI -->
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="profil.html">Profil</a>
+    <a href="index.html">Home</a>
+    <a href="informasi.html">Informasi</a>
+    <a href="kontak.html" class="active">Alamat</a>
+    <a href="visi misi.html">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- HEADER PAGE -->
+<section class="page-header">
+  <div class="overlay"></div>
+  <h1>Alamat Kami</h1>
+</section>
+
+<!-- KONTAK -->
+<section class="kontak">
+  <div class="kontak-info">
+    <h3>Alamat Sekolah</h3>
+    <p>Kp. Pagelaran Rt. 01/04, Padasuka, Kec. Ciomas, Kab. Bogor Prov. Jawa Barat</p>
+
+    <h3>Telepon</h3>
+    <p>0251-8634-997</p>
+
+    <h3>Email</h3>
+    <p>mtsdarulihyaciomas@gmail.com</p>
+  </div>
+
+  <form class="kontak-form">
+    <h3>Maps Sekolah</h3>
+    <div class="kontak-map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d257676.34425816973!2d106.79613991586162!3d-6.535788336706507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c51024988dff%3A0x473d43b3db2919ed!2sMTs.%20Darul%20Ihya!5e0!3m2!1sid!2sid!4v1775656760330!5m2!1sid!2sid"
+      loading="lazy">
+    </iframe>
+  </div>
+  </form>
+</section>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

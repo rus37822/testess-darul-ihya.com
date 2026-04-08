@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTS DARUL IHYA</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📞 +62 8121-689-0224</span>
+</div>
+
+<div class="social-mini">
+  <a href="https://www.instagram.com/mtsdarulihyaciomas"
+     target="_blank" rel="noopener">
+    <img src="img.jpg/foto ig.jpeg" alt="Instagram">
+  </a>
+
+  <a href="https://www.facebook.com/nama_akun_fb"
+     target="_blank" rel="noopener">
+    <img src="img.jpg/foto fb.jpeg" alt="Facebook">
+  </a>
+
+  <a href="mailto:mtsdarulihyaciomas@gmail.com">
+    <img src="img.jpg/foto gmail.jpeg" alt="Email">
+  </a>
+</div>
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo Sekolah">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+
+ <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="profil.html">Profil</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="informasi.html">Informasi</a>
+    <a href="kontak.html">Alamat</a>
+    <a href="visi misi.html">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>SELAMAT DATANG DI WEB DASBOARD DARUL IHYA</h1>
+    <p>Excellent with Integral Character</p>
+  </div>
+
+  <div class="hero-image">
+    <img src="siswa.png" alt="Siswa Berprestasi">
+  </div>
+</section>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

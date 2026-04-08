@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visi & Misi</title>
+  <link rel="stylesheet" href="visi-misi.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>Visi & Misi</span>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+
+  
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="profil.html">Profil</a>
+    <a href="index.html">Home</a>
+    <a href="informasi.html">Informasi</a>
+    <a href="kontak.html">Alamat</a>
+    <a href="visi misi.html" class="active">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- SECTION VISI MISI -->
+<section class="visi-misi">
+  
+  <!-- KIRI -->
+  <div class="visi-text">
+    <h2>Visi</h2>
+    <p>
+      "Terwujudnya Madrasah Tsanawiyah Darul Ihya yang Unggul Dalam Membina Peserta Didik dengan Berpijak Kepada  Iman, Ilmu dan Amal"
+    </p>
+
+    <h2>Misi</h2>
+    <ul>
+      <li>Membina peserta didik yang bertaqwa kepada Allah SWT dengan memiliki kualitas Iman, Ilmu dan Amal serta menanamkan nilai-nilai pendidikan berkarakter.</li>
+      <li>Melaksanakan kegiatan belajar mengajar dengan pengajaran Aktif, Inovatif, Kreatif, Efektif dan Menyenangkan bagi peserta didik.</li>
+      <li>Menjadikan MTs Darul Ihya lembaga pendidikan yang berkualitas dan ungggul dalam KBM : Intra dan Ekstrakulikuler.</li>
+      <li>Mengadakan komunikasi, koordinasi dan kerjasama dengan lembaga-lembaga baik pemerintah maupun swasta guna mencapai tujuan madrasah.</li>
+    </ul>
+  </div>
+
+  <!-- KANAN -->
+  <div class="visi-image">
+    <img src="img.jpg/bapak kepala sekolah.jpeg" alt="Kepala Sekolah">
+    <h4>Kepala Sekolah</h4>
+  </div>
+
+</section>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

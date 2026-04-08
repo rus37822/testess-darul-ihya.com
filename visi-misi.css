@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f5f4;
+  position: relative;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #0b7c77;
+  color: #eaf0ec;
+  padding: 8px 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeDown 0.6s ease-out;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 1000; /* PENTING */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #f8fbfa;
+  flex-wrap: wrap;
+  animation: fadeDown 0.8s ease-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo h3 {
+  font-size: 16px;
+}
+
+.logo p {
+  font-size: 12px;
+  color: #555;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+nav a.active {
+  color: #0b7c77;
+  font-weight: bold;
+}
+
+/* GARIS TIGA */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1100;
+}
+
+/* ACTIVE MENU */
+nav a.active {
+  color: #0b7c77;
+  font-weight: bold;
+}
+
+.page-header .overlay {
+  position: absolute;
+  inset: 0;
+  
+}
+
+.page-header h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 36px;
+  animation: fadeDown 0.8s ease;
+}
+
+/* PROGRAM SECTION */
+.program {
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  background: #f9f9f9;
+}
+
+.program-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  animation: fadeUp 0.8s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+}
+
+.program-card h3 {
+  color: #0b7c77;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* FADE UP */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .program {
+    padding: 40px 20px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 1200; /*  MENU DI ATAS HERO */
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+/* SECTION VISI MISI */
+.visi-misi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+  gap: 60px;
+
+  min-height: 100vh;
+
+  background: url("img.jpg/bekron.jpeg") center/cover no-repeat fixed;
+}
+
+/* Overlay Gelap */
+.visi-misi::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+/* Supaya konten di atas overlay */
+.visi-misi > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* CARD GLASS EFFECT */
+.visi-text {
+  flex: 1;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.visi-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.visi-text h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #0b7c77;
+  display: block;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+.visi-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.visi-text ul {
+  padding-left: 20px;
+}
+
+.visi-text li {
+  margin-bottom: 10px;
+}
+
+/* FOTO KEPALA SEKOLAH */
+.visi-image {
+  flex: 1;
+  text-align: center;
+}
+
+.visi-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: 0.4s ease;
+}
+
+.visi-image img:hover {
+  transform: scale(1.05);
+}
+
+.visi-image h4 {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* RESPONSIF */
+@media (max-width: 992px) {
+  .visi-misi {
+    padding: 80px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .visi-misi {
+    flex-direction: column;
+    text-align: center;
+    background-attachment: scroll; /* biar parallax aman di HP */
+  }
+
+  .visi-text {
+    padding: 25px;
+  }
+
+  .visi-text ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .visi-image img {
+    max-width: 260px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ANIMASI SAAT HALAMAN DIBUKA */
+.visi-misi {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi foto sedikit delay */
+.visi-image img {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

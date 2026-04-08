@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sekolah</title>
+  <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>Profil Kami</span>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+  
+ <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+     <a href="profil.html" class="active">Profil</a>
+    <a href="index.html">Home</a>
+    <a href="informasi.html">Informasi</a>
+    <a href="kontak.html">Alamat</a>
+    <a href="visi misi.html">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- SECTION PROFIL -->
+<section class="profil-section">
+
+  <div class="profil-text">
+    <h1>Tentang Sekolah</h1>
+    <p>
+      MTs Darul Ihya merupakan lembaga pendidikan Islam yang berdiri sejak tahun 1983,
+
+      MTs Darul Ihya terus tumbuh menjadi madrasah unggulan dengan komitmen tinggi dalam mencetak generasi yang cerdas, berakhlak mulia, dan berwawasan islami. Saat ini, Yayasan Darul Ihya dipimpin oleh Drs. KH. Mu’tashim Billah, M.HI sebagai Ketua Yayasan.
+
+        Sejak 2 Mei 2011, kepemimpinan MTs Darul Ihya diemban oleh Bapak Misbahpudin, S.Ag, yang terus mendorong peningkatan mutu pendidikan, baik secara akademik maupun spiritual.
+
+         Sebagai bukti kualitasnya, MTs Darul Ihya telah terakreditasi “A” (Amat Baik) dan berhasil meraih peringkat ke-2 sebagai Madrasah Swasta Terbaik se-Kabupaten Bogor berdasarkan hasil akreditasi terbaru. Pencapaian ini menjadi motivasi untuk terus memberikan pendidikan terbaik bagi para siswa.
+    </p>
+
+    <div class="profil-stats">
+      <div class="stat-box">
+        <h2>500+</h2>
+        <p>Siswa Aktif</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>30+</h2>
+        <p>Guru Profesional</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>1983</h2>
+        <p>Tahun Berdiri</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="profil-image">
+    <img src="img.jpg/foto gedung.jpeg" alt="Gedung Sekolah">
+  </div>
+
+</section>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>
